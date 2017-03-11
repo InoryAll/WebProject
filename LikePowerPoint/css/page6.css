@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* 第六页 */
+.p6_1{
+	position: absolute;
+	width: 65%;
+	height: 40%;
+	left: 18%;
+	top: 11%;}
+.p6_2{
+	position: absolute;
+	width: 40%;
+	height: 16%;
+	left: 32%;
+	top: 59%;}
+.p6_3{
+	position: absolute;
+	width: 70%;
+	height: 10%;
+	top: 82%;
+	left: 16%;cursor:pointer;}

@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* 加载页面 */
+.loading { position:absolute;}
+.loadbox { width:100%;  height:100%;position:relative;}
+.circle{ background:url(../images/loading.png) no-repeat; width:100%; height:100%;position:absolute;background-size:cover;animation:xuanzhuan 1.2s linear infinite;}
+.circle_logo{ background: url(../images/logo.png) no-repeat; width:100%; height:100%;position:absolute;background-size:cover;}
+

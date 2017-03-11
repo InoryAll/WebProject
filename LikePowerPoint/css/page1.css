@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* 第一页 */
+.p1_1{
+    position: absolute;
+	width: 2%;
+	height: 11%;
+	left: 80%;
+	top: 2%;
+	}
+.p1_2{
+	position: absolute;
+	left: 75%;
+	top: 13%;
+	height: 1.5%;
+	width: 22%;
+	}
+.p1_3{
+	width: 2%;
+	position: absolute;
+	height: 12%;
+	left: 73%;
+	top: 10%;
+	}
+.p1_4{
+	position: absolute;
+	width: 21%;
+	height: 1.5%;
+	left: 59%;
+	top: 9%;
+	}
+.p1_5{
+	position: absolute;
+	left: 4%;
+	top: -5%;
+	}
+.p1_6{
+	position: absolute;
+	left: 45%;
+	top: 21%;
+	}
+.p1_7{
+	position: absolute;
+	left: 8%;
+	top: 43%;
+	}
+.p1_8{
+	position: absolute;
+	left: 47%;
+	top: 63%;
+	}
+.p1_9{
+	position: absolute;
+	left: 2%;
+	top: 77%;
+	}

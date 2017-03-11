@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/mousestyle.css" />
+<link rel="stylesheet" href="css/bottonstyle.css" media="screen" type="text/css" />
+</head>
+<body>
+
+<button id="directNextpage" onclick="window.location.href='html/content.html'">点击进入</button> 
+<script src='js/jquery.min.js'></script> 
+<script type="text/javascript">
+
+	  $(function(){
+	    button = $('button');
+
+	    button.click(function(e) {
+	      e.preventDefault();
+	      $(this).toggleClass('active');
+	    });
+
+
+	    $(window).resize(function(e) {
+	      button.removeClass('active');
+	    });
+	  });
+	 
+	</script>
+<div id="container">
+<script type="text/javascript" src='js/sketch.min.js'></script>
+<script type="text/javascript" src="js/index.js"></script>
+</div>
+<div id="au">
+<iframe height="75" width="1280" src="audio/au1.mp3" frameborder="0"></iframe>
+</div>
+</body>
+</html>

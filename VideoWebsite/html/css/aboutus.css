@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+
+#lx{width:1260px;height:300px;margin-left:20px;}
+#lx1{width:1000px;height:600px; background-image:url(../images/pincel3D14.jpg);font-size:24px;text-align:center;margin-top:20px;margin-left:20px;padding-left:200px;letter-spacing:2px;line-height:50px;}
+#lx2{clear:both;width:1260px;height:100px;margin-left:20px;border-top:6px solid #006633;text-align:center;}
+#ad{position:fixed;max-width:100px;top:0px;left:0;}

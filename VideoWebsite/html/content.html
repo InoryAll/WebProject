@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的主页</title>
+<link rel="stylesheet" type="text/css" href="../css/contentstyle.css" />
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+<style type="text/css">
+.divcss5_list_title{background:#eeeeee; border:1px solid #cccccc; padding:1em;}
+.divcss5_list_content{padding:1em;}
+#tinybox{position:absolute; display:none; padding:10px; background:#ffffff url(image/preload.gif) no-repeat 50% 50%; border:10px solid #e3e3e3; z-index:2000;}
+#tinymask{position:absolute; display:none; top:0; left:0; height:100%; width:100%; background:#000000; z-index:1500;}
+#tinycontent{background:#ffffff; font-size:1.1em;}
+
+#n{margin:10px auto; width:920px; border:1px solid #CCC;font-size:12px; line-height:30px;}
+#n a{ padding:0 4px; color:#333}
+</style>
+</head>
+<body>
+<div id="top"><div class="kePublic">
+<div class="container">
+  <div class="main clearfix">
+    <nav id="menu" class="nav">
+      <ul>
+        <li> <a href="content.html"> <span class="icon"> <i aria-hidden="true" class="icon-home"></i> </span> <span>首页</span> </a> </li>
+        <li> <a href="#"> <span class="icon"> <i aria-hidden="true" class="icon-services"></i> </span> <span>视频</span> </a> </li>
+        <li> <a href="#"> <span class="icon"> <i aria-hidden="true" class="icon-portfolio"></i> </span> <span>图片</span> </a> </li>
+        <li> <a href="#"> <span class="icon"> <i aria-hidden="true" class="icon-blog"></i> </span> <span>音乐</span> </a> </li>
+        <li> <a href="aboutus.html"> <span class="icon"> <i aria-hidden="true" class="icon-team"></i> </span> <span>关于我们</span> </a> </li>
+        
+        <li> <a href="login.html"><span class="icon"> <i aria-hidden="true" class="icon-contact"></i> </span> <span>登录</span></a>
+        </li>
+      </ul>
+    </nav>
+    <div style="text-align:center;clear:both"><br>
+  </div>
+</div>
+<!-- /container --> 
+<script>
+			//  The function to change the class
+			var changeClass = function (r,className1,className2) {
+				var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
+				if( regex.test(r.className) ) {
+					r.className = r.className.replace(regex,' '+className2+' ');
+			    }
+			    else{
+					r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
+			    }
+			    return r.className;
+			};	
+
+			//  Creating our button in JS for smaller screens
+			var menuElements = document.getElementById('menu');
+			menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>');
+
+			//  Toggle the class on click to show / hide the menu
+			document.getElementById('menutoggle').onclick = function() {
+				changeClass(this, 'navtoogle active', 'navtoogle');
+			}
+		</script>
+
+</div>
+<div id="banner">
+<img src="../images/banner.jpg" width="1280px" height="300px"/>
+</div>
+<div id="song">
+<h2>诗歌</h2>
+<hr />
+<div id="songl">
+月光色<br />
+女子香<br />
+泪断剑<br />
+情多长<br />
+有多痛<br />
+无字想<br />
+忘了你<br />
+孤单魂 
+</div>
+<div id="songm">
+随风荡<br />
+谁去笑<br /> 
+想痴情郎<br />
+这红尘的战场<br />
+千军万马<br />
+有谁能称王<br />
+过情关<br />
+谁敢闯
+</div>
+<div id="songr">
+望明月<br /> 
+心悲凉<br />
+千古恨<br /> 
+轮回尝<br />
+眼一闭<br /> 
+谁最狂<br />
+这世道的无常<br />
+注定敢爱的人一生伤
+</div>
+</div>
+<div id="main">
+<div id="mainl">
+<section id="player">
+  <video id="media" width="704" height="600" controls> 
+    <source src="../video/wl.mp4">
+    <source src="http://minkbooks.com/content/trailer.ogg">
+  </video> 
+</section>
+</div>
+<div id="mainr">
+<div id="mainrt">
+<div id="mainrtl">
+<img src="../images/picture1.jpg" />
+</div>
+<div id="mainrtr">
+<img src="../images/picture2.JPEG" />
+</div>
+</div>
+<div id="mainrb">
+<div id="mainrbl">
+<img src="../images/picture3.JPEG" />
+</div>
+<div id="mainrbr">
+<img src="../images/picture4.JPEG" />
+</div>
+</div>
+</div>
+</div>
+<div id="other">
+<div id="otherl">
+<h2>电影介绍:</h2>
+<hr />
+影片《机器人总动员》是2008年一部由安德鲁·斯坦顿编导的科幻动画电影。由皮克斯动画工作室进行制作，华特·迪士尼电影工作室电影公司负责发行。安德鲁·斯坦顿执导，本·贝尔特、艾丽莎·奈特和杰夫·格尔林等联袂献声配音。影片于2008年6月27日在美国上映。故事讲述了地球上的清扫型机器人瓦力偶遇并爱上了机器人夏娃后，追随她进入太空历险的一系列故事。影片的全球票房累计超过5.3亿美元，曾获得第81届奥斯卡最佳动画长片奖。
+</div>
+<div id="otherr">
+<h2>Logo</h2>
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="../images/logo.jpg" />
+</div>
+</div>
+<div id="booter">
+软件142班 出品<br />仿冒必究
+</div>
+<div id="ad">
+<img src="../images/pet.gif" width="48px" height="48px" />
+</div>
+<div id="au">
+<iframe height="40" width="1280" src="../audio/au.mp3"  frameborder="0" id="audio"></iframe>
+</div>
+</body>
+</html>

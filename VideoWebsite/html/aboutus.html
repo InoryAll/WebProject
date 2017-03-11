@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>关于我们</title>
+<style type="text/css">
+
+@import url(css/aboutus.css);
+
+</style>
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+<style type="text/css">
+.divcss5_list_title{background:#eeeeee; border:1px solid #cccccc; padding:1em;}
+.divcss5_list_content{padding:1em;}
+#tinybox{position:absolute; display:none; padding:10px; background:#ffffff url(image/preload.gif) no-repeat 50% 50%; border:10px solid #e3e3e3; z-index:2000;}
+#tinymask{position:absolute; display:none; top:0; left:0; height:100%; width:100%; background:#000000; z-index:1500;}
+#tinycontent{background:#ffffff; font-size:1.1em;}
+
+#n{margin:10px auto; width:920px; border:1px solid #CCC;font-size:12px; line-height:30px;}
+#n a{ padding:0 4px; color:#333}
+</style>
+</head>
+
+<body>
+	<div id="lx">
+    <div class="kePublic">
+<div class="container">
+  <div class="main clearfix">
+    <nav id="menu" class="nav">
+      <ul>
+        <li> <a href="content.html"> <span class="icon"> <i aria-hidden="true" class="icon-home"></i> </span> <span>首页</span> </a> </li>
+        <li> <a href="#"> <span class="icon"> <i aria-hidden="true" class="icon-services"></i> </span> <span>视频</span> </a> </li>
+        <li> <a href="#"> <span class="icon"> <i aria-hidden="true" class="icon-portfolio"></i> </span> <span>图片</span> </a> </li>
+        <li> <a href="#"> <span class="icon"> <i aria-hidden="true" class="icon-blog"></i> </span> <span>音乐</span> </a> </li>
+        <li> <a href="#"> <span class="icon"> <i aria-hidden="true" class="icon-team"></i> </span> <span>关于我们</span> </a> </li>
+        
+        <li> <a href="login.html"><span class="icon"> <i aria-hidden="true" class="icon-contact"></i> </span> <span>登录</span></a>
+        </li>
+      </ul>
+    </nav>
+    <div style="text-align:center;clear:both"><br>
+  </div>
+</div>
+<!-- /container --> 
+<script>
+			//  The function to change the class
+			var changeClass = function (r,className1,className2) {
+				var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
+				if( regex.test(r.className) ) {
+					r.className = r.className.replace(regex,' '+className2+' ');
+			    }
+			    else{
+					r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
+			    }
+			    return r.className;
+			};	
+
+			//  Creating our button in JS for smaller screens
+			var menuElements = document.getElementById('menu');
+			menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>');
+
+			//  Toggle the class on click to show / hide the menu
+			document.getElementById('menutoggle').onclick = function() {
+				changeClass(this, 'navtoogle active', 'navtoogle');
+			}
+		</script>
+    </div>
+    <h2 align="center">关于我们</h2>
+	<div id="lx1">        放飞心灵的驯鸽 <br />　　翱翔在蓝天，拥抱着白云<br />　打开心灵的一扇窗<br />　漏进温馨的阳光，甘甜的雨露 <br />　　 　唱响青春的主旋律，世界不会再寂寞 <br />　　绿苔不再爬上台阶 <br />　　路途不再崎岖坎坷 <br />　　心境不再惆怅愤懑 
+    激活豪情，激活人生<br />　      让梦想穿梭时空，让世界燃烧激情<br />　我们无悔<br />　拥有青春，更拥有燃烧的激情
+    </div>
+	<div id="lx2">
+	软件142班 出品<br />仿冒必究
+	</div>
+    <div id="ad">
+<img src="../images/pet.gif" width="48px" height="48px" />
+</div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1;maxinum-scale=1;user-scalable=no;">
+<meta name="viewport"  content="telephone=no">
+<meta name="viewport"  content="email=no">
+<title>我的二次元世界</title>
+<link href="css/load.css" type="text/css" rel="stylesheet">
+<link href="css/index.css" type="text/css" rel="stylesheet">
+<link href="css/animation.css" type="text/css" rel="stylesheet">
+<link href="css/keyframes.css" type="text/css" rel="stylesheet">
+<link href="css/page1.css" type="text/css" rel="stylesheet">
+<link href="css/page2.css" type="text/css" rel="stylesheet">
+<link href="css/page3.css" type="text/css" rel="stylesheet">
+<link href="css/page4.css" type="text/css" rel="stylesheet">
+<link href="css/page5.css" type="text/css" rel="stylesheet">
+<link href="css/page6.css" type="text/css" rel="stylesheet">
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</head>
+</head>
+
+<body>
+
+<!--载入-->
+<div class="loading" id="loading">
+	<div class="loadbox">
+    	<div class="circle"></div>
+        <div class="circle_logo"></div>
+    </div>
+</div>
+<!--主舞台-->
+<div class="content" id="content" style="display:none;">
+ <!--第一页-->
+ <div class="page page1">
+ <img src="images/page1-1.png" class="p1_1 page_moveFromTop">
+ <img src="images/page1-2.png" class="p1_2 page_moveFromRight delay500" >
+ <img src="images/page1-3.png" class="p1_3 page_moveFromBottom delay1000">
+ <img src="images/page1-4.png" class="p1_4 page_moveFromLeft delay1500">
+ <img src="images/page1-5.png" class="p1_5 page_moveFromLeft delay2000">
+ <img src="images/page1-6.png" class="p1_6 page_moveFromRight delay2500">
+ <img src="images/page1-7.png" class="p1_7 page_moveFromLeft delay3000">
+ <img src="images/page1-8.png" class="p1_8 page_moveFromRight delay3500">
+ <img src="images/page1-9.png" class="p1_9 page_moveFromLeft delay4000">
+ </div>
+ <!--第二页-->
+ <div class="page page2 hide">
+ <img src="images/page2-1.png" class="p2_1 hide page_moveFromTop">
+ <div class="p2_2_box">
+ <img src="images/page2-2.png" class="p2_2 hide page_moveFromLeft delay100">
+ </div>
+ <img src="images/page2-3.png" class="p2_3 hide page_moveFromRight delay500">
+  <img src="images/page2-4.png" class="p2_6 hide page_moveFromLeft delay1000">
+ <img src="images/page2-3.png" class="p2_4 hide page_moveFromRight delay1000">
+  <img src="images/page2-5.png" class="p2_7 hide page_moveFromLeft delay1500">
+ <img src="images/page2-3.png" class="p2_5 hide page_moveFromRight delay1500">
+ <img src="images/page2-6.png" class="p2_8 hide page_moveFromLeft delay2000">
+ <img src="images/page2-7.png" class="p2_9 hide page_moveFromLeft delay2500">
+ <img src="images/page2-8.png" class="p2_10 hide page_moveFromLeft delay3000">
+ </div>
+  <!--第三页-->
+<div class="page page3 hide">
+<img src="images/page3-6.png" class="p3_6 hide page_moveFromTop">
+<img src="images/page3-1.png" class="p3_1 hide page_opacity0To1 delay600">
+<img src="images/white-tab.png" class="left_tab hide page_moveToLeft delay600">
+<img src="images/white-tab.png" class="right_tab hide page_moveToRight delay600">
+<img src="images/page3-2.png" class="p3_2 hide page_moveFromBottom delay1200">
+<img src="images/page3-3.png" class="p3_3 hide page_moveFromBottom delay1200">
+<img src="images/page3-4.png" class="p3_4 hide page_moveFromLeft delay1600">
+<img src="images/page3-5.png" class="p3_5 hide page_moveFromBottom delay2000">
+</div>
+  <!--第四页-->
+ <div class="page page4">
+<img src="images/page4-6.png" class="p4_6 hide page_moveFromTop">
+<img src="images/page4-1.png" class="p4_1 hide page_opacity0To1 delay600">
+<img src="images/white-tab.png" class="left_tab hide page_moveToLeft delay600">
+<img src="images/white-tab.png" class="right_tab hide page_moveToRight delay600">
+<img src="images/page4-2.png" class="p4_2 hide page_moveFromBottom delay1200">
+<img src="images/page4-3.png" class="p4_3 hide page_moveFromBottom delay1200">
+<img src="images/page4-4.png" class="p4_4 hide page_moveFromLeft delay1600">
+<img src="images/page4-5.png" class="p4_5 hide page_moveFromBottom delay2000">
+
+ </div>
+  <!--第五页-->
+ <div class="page page5">
+<img src="images/page5-6.png" class="p5_6 hide page_moveFromTop">
+<img src="images/page5-1.png" class="p5_1 hide page_opacity0To1 delay600">
+<img src="images/white-tab.png" class="left_tab hide page_moveToLeft delay600">
+<img src="images/white-tab.png" class="right_tab hide page_moveToRight delay600">
+<img src="images/page5-2.png" class="p5_2 hide page_moveFromBottom delay1200">
+<img src="images/page5-3.png" class="p5_3 hide page_moveFromBottom delay1200">
+<img src="images/page5-4.png" class="p5_4 hide page_moveFromLeft delay1600">
+<img src="images/page5-5.png" class="p5_5 hide page_moveFromBottom delay2000">
+ </div>
+  <!--第六页-->
+ <div class="page page6 hide">
+<img src="images/page6-1.png" class="p6_1 page_moveFromTop"  onClick="goToAnotherpage()">
+<img src="images/page6-2.png" class="p6_2 page_resizeBig delay600">
+<img src="images/page6-3.png" class="p6_3 page_moveFromBottom delay1200" onClick="showShareBox()">
+
+ </div>
+</div>
+<!--分享框-->
+<div class="sharebox hide" id="sharebox" onClick="closeSharebox()">
+	<img src="images/share.png">
+</div>
+<!--播放器-->
+<div class="videoContainer" id="videoContainer">
+</div>
+<div class="videoBt " onClick="changeVideostate()">
+	<img src="images/music_on.png">
+    <img src="images/music.gif" class="music" id="music">
+</div>
+<!--下拉提示-->
+<div class="listbox" id="listbox">
+<img src="images/icon_up.png">
+</div>
+</body> 
+</html>

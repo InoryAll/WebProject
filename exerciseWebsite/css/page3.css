@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* 第三页 */
+.p3_topic{
+	top: 16%;
+	position: absolute;
+	left: 34%;
+	font-size: 40px;
+	color: rgb(160, 179, 176);
+	}

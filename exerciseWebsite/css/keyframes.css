@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* keyframes */
+@keyframes xuanzhuan{
+	0%{ transform:rotate(0)}
+	100%{transform:rotate(360deg)}
+	}
+@-webkit-keyframes xuanzhuan{
+	0%{ transform:rotate(0)}
+	100%{transform:rotate(360deg)}
+	}
+/*飞入*/
+@keyframes moveFromTop{
+	0%{transform:translateY(-100%);}
+	}
+@-webkit-keyframes moveFromTop{
+	0%{transform:translateY(-100%);-webkit-transform:translateY(-100%);}
+	}
+@keyframes moveFromLeft{
+	0%{transform:translateX(-100%);}
+	}
+@-webkit-keyframes moveFromLeft{
+	0%{transform:translateX(-100%);-webkit-transform:translateX(-1000%);}
+	}
+@keyframes moveFromBottom{
+	0%{transform:translateY(1500%);}
+	}
+@-webkit-keyframes moveFromBot0tom{
+	0%{transform:translateY(1500%);}
+	}
+@keyframes moveFromRight{
+	0%{transform:translateX(200%);}
+	}
+@-webkit-keyframes moveFromRight{
+	0%{transform:translateX(200%);}
+	}
+	@keyframes moveToLeft{
+	to{ transform:translateX(-120%);}
+	}
+@-webkit-keyframes moveToLeft{
+	to{ transform:translateX(-120%);-webkit-transform:translateX(-120%);}
+	}
+@keyframes moveToRight{
+	to{ transform:translateX(120%);}
+	}
+@-webkit-keyframes moveToRight{
+	to{ transform:translateX(120%);-webkit-transform:translateX(120%);}
+	}
+/*放大缩小动画*/
+@keyframes resizeBig{
+	0%{ transform:scale(2,2); opacity:0;}
+	100%{ transform:scale(1,1); opacity:1;}
+	}
+@-webkit-keyframes resizeBig{
+	0%{ transform:scale(2,2);-webkit-transform:scale(2,2);opacity:0;}
+	100%{ transform:scale(1,1);-webkit- transform:scale(1,1);opacity:1;}
+	}
+	
+/*淡入淡出*/
+@keyframes opacity0To1{
+	0%{ opacity:0;}
+	100%{  opacity:1;}
+	}
+@-webkit-keyframes opacity0To1{
+	0%{ opacity:0;}
+	100%{  opacity:1;}
+	}
+	
+/*页面切换*/
+@keyframes moveToTopbox{
+	to{ transform:translateY(-100%);}
+	}
+@-webkit-keyframes moveToTopbox{
+	to{ transform:translateY(-100%);-webkit-transform:translateY(-100%);}
+	}
+@keyframes moveFromBottombox{
+	from{ transform:translateY(100%);}
+	}
+@-webkit-keyframes moveFromBottombox{
+	from{ transform:translateY(100%);-webkit-transform:translateY(100%);}
+	}
+@keyframes moveToBottombox{
+	to{ transform:translateY(100%);}
+	}
+@-webkit-keyframes moveToBottombox{
+	to{ transform:translateY(100%);-webkit-transform:translateY(100%);}
+	}	
+@keyframes moveFromTopbox{
+	from{ transform:translateY(-100%);}
+	}
+@-webkit-keyframes moveFromTopbox{
+	from{ transform:translateY(-100%);-webkit-transform:translateY(-100%);}
+	}	

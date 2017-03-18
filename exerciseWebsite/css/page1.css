@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* 第一页 */
+.p1_topic{
+	top: 10%;
+	position: absolute;
+	left: 10%;
+	font-size: 40px;
+	color: rgb(160, 179, 176);
+}

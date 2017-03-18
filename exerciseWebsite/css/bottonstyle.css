@@ -1,0 +1,112 @@
+@charset "utf-8";
+.intro { position: relative; margin: 50px auto; color: #458ecc; width: 600px; font: 16px/26px "微软雅黑"; }
+button {    
+	position: relative;
+    display: block;
+    margin-left: 408px;
+	margin-top: 188px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 2px 2px 2px #3a7faa;
+    box-shadow: 0px 9px 0px black, 0px 9px 25px black;
+    transition: all .1s ease;
+    -webkit-transition: all .1s ease;
+    color: white;
+    background-color: #000;
+    border-radius: 8px;
+    border: none;
+    outline: 0 none;
+    width: 250px;
+    height: 80px;
+    overflow: hidden;
+    cursor: pointer;
+    font: bold 28px/65px "微软雅黑";
+}
+button:active { box-shadow: 0px 3px 0px #3a7faa, 0px 3px 6px rgba(0, 0, 0, 0.9); top: 6px; }
+.main-text { position: absolute; left: 110px; }
+.submit { text-transform: uppercase; color: #efd959; }
+.sent-text { position: absolute; left: 40px; opacity: 0; }
+button.active .main-text { display: none; }
+button.active .sent-text { animation: sent 4s forwards; animation-delay: 4s; -webkit-animation: sent 4s forwards; -webkit-animation-delay: 4s; }
+.sub { float: left; padding: 0 0 0 10px; width: 65px; height: 65px; }
+button.active .sub { animation: drive 3s forwards; animation-delay: 2s; -webkit-animation: drive 3s forwards; -webkit-animation-delay: 2s; }
+.splash { float: left; margin-left: 30px; margin-top: -40px; transform: rotate(-10deg); -webkit-transform: rotate(-10deg); opacity: 0; }
+.splash-2 { float: right; margin-right: 30px; transform: rotate(10deg); -webkit-transform: rotate(10deg); }
+.submerge { position: absolute; top: 80px; border-radius: 0 0 10px 10px; left: 0; opacity: .7; }
+button.active .submerge { animation: submerge 2s forwards; -webkit-animation: submerge 2s forwards; }
+.return { position: relative; display: block; margin: auto; font-family: 'Lato', sans-serif; font-size: 22px; text-align: center; border: 2px solid #8ec6ef; padding: 0 15px; text-decoration: none; line-height: 40px; color: #8ec6ef; width: 150px; height: 40px; }
+.return:hover { color: #458ecc; border: 2px solid #458ecc; }
+ @keyframes submerge {  to {
+ transform: translateY(-50px);
+}
+}
+@keyframes drive {  to {
+ transform: translateX(140px);
+}
+}
+@keyframes sent {  to {
+ opacity: 1;
+}
+}
+@-webkit-keyframes submerge {  to {
+ -webkit-transform: translateY(-50px);
+}
+}
+@-webkit-keyframes drive {  to {
+ -webkit-transform: translateX(140px);
+}
+}
+@-webkit-keyframes sent {  to {
+ opacity: 1;
+}
+}
+@keyframes jump {  25% {
+ transform: translateY(-90px) rotate(-40deg);
+}
+ 75% {
+ transform: translateY(-90px) translateX(150px) rotate(40deg);
+}
+ 100% {
+ transform: translateY(0) translateX(150px);
+}
+}
+@keyframes water-splash {  0% {
+ opacity: 0;
+}
+ 50% {
+ opacity: 1;
+}
+ 100% {
+ opacity: 0;
+}
+}
+@-webkit-keyframes jump {  25% {
+ -webkit-transform: translateY(-90px) rotate(-40deg);
+}
+ 75% {
+ -webkit-transform: translateY(-90px) translateX(150px) rotate(40deg);
+}
+ 100% {
+ -webkit-transform: translateY(0) translateX(150px);
+}
+}
+@-webkit-keyframes water-splash {  0% {
+ opacity: 0;
+}
+ 50% {
+ opacity: 1;
+}
+ 100% {
+ opacity: 0;
+}
+}
+@media (min-width: 800px) {
+button { overflow: visible; }
+.submerge { display: none; }
+button.active .sub { animation: jump 4s forwards; }
+button.active .splash { animation: water-splash 3s forwards; }
+button.active .splash-2 { animation-delay: 3s; }
+button.active .sub { -webkit-animation: jump 4s forwards; }
+button.active .splash { -webkit-animation: water-splash 3s forwards; }
+button.active .splash-2 { -webkit-animation-delay: 3s; }
+}

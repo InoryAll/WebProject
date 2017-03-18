@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>登录/注册</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/loginstyle.css">
+  </head>
+
+  <body>
+
+    <div class="form">
+      
+      <ul class="tab-group">
+         <li class="tab active"><a href="#login">登&nbsp;&nbsp;录</a></li>
+         <li class="tab "><a href="#signup">注&nbsp;&nbsp;册</a></li>
+      </ul>
+      
+      <div class="tab-content">
+      
+        <div id="login">   
+          <h1>欢迎回来!</h1>
+          
+          <form action="/" method="post"><!--登录表单-->
+          
+            <div class="field-wrap">
+            <label>
+              手机<span class="req">*</span>
+            </label>
+            <input type="tel"required autocomplete="off" name="">
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              密码<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off" name="">
+          </div>
+           <div class="field-wrap">
+            <label>
+            验证码<span class="req">*</span>
+            </label>
+            <input type="text"required autocomplete="off" name=
+            "">
+            <br>
+            <br>
+            <img src="images/bx_loader.gif">
+          </div>
+           <div class="field-wrap">
+          <label>
+              
+          </label>
+			<p id="result">这里显示提交结果</p><!--**提交失败/成功***-->
+          </div>
+          
+          <p class="forgot"><a href="#">忘记密码?</a></p>
+          
+          <button type="submit" class="button button-block"/>登入</button>
+          
+          </form>
+
+        </div>
+        
+         <div id="signup">   
+          <h1>免&nbsp;费&nbsp;注&nbsp;册</h1>
+          
+          <form action="/" method="post"><!--注册表单-->
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                姓<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" name="">
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                名<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off" name="">
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              手机<span class="req">*</span>
+            </label>
+            <input type="tel"required autocomplete="off" name="">
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              性别<span class="req">*</span>
+            </label>
+            <select name="" class="select">
+            <option value="">男</option>
+            <option value="">女</option>
+            </select>
+            
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+             年龄<span class="req">*</span>
+            </label>
+            <input type="text"required autocomplete="off" name="">
+          </div>
+          
+           <div class="field-wrap">
+            <label>
+              职业<span class="req">*</span>
+            </label>
+            <input type="text"required autocomplete="off" name=
+            "">
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              密码<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off" name="">
+          </div>
+           <div class="field-wrap">
+            <label>
+              确认密码<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off" name="">
+          </div>
+          <div class="field-wrap">
+            <label>
+            验证码<span class="req">*</span>
+            </label>
+            <input type="text"required autocomplete="off" name=
+            "">
+            <br>
+            <br>
+            <img src="images/bx_loader.gif">
+          </div>
+          <div class="field-wrap">
+          <label>
+              
+          </label>
+			<p id="result">这里显示提交结果</p><!--**提交失败/成功***-->
+          </div>
+          <button type="submit" class="button button-block"/>提交</button>
+          
+          </form>
+
+        </div>
+        
+      </div>
+      
+</div> 
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

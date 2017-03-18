@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1;maxinum-scale=1;user-scalable=no;">
+<meta name="viewport"  content="telephone=no">
+<meta name="viewport"  content="email=no">
+<title>导航</title>
+<link rel="stylesheet" href="css/bottonstyle.css" media="screen" type="text/css" >
+<link href="css/load.css" type="text/css" rel="stylesheet">
+<link href="css/index.css" type="text/css" rel="stylesheet">
+<link href="css/animation.css" type="text/css" rel="stylesheet">
+<link href="css/keyframes.css" type="text/css" rel="stylesheet">
+<link href="css/page1.css" type="text/css" rel="stylesheet">
+<link href="css/page2.css" type="text/css" rel="stylesheet">
+<link href="css/page3.css" type="text/css" rel="stylesheet">
+
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.js"></script>
+<script type="text/javascript" src="js/index2.js"></script>
+<script type="text/javascript">
+
+	  $(function(){
+	    button = $('button');
+
+	    button.click(function(e) {
+	      e.preventDefault();
+	      $(this).toggleClass('active');
+	    });
+
+
+	    $(window).resize(function(e) {
+	      button.removeClass('active');
+	    });
+	  });
+	 
+	</script>
+
+</head>
+</head>
+
+<body>
+<!--载入-->
+<div class="loading" id="loading">
+	<div class="loadbox">
+    	<div class="circle"></div>
+        <div class="circle_logo"></div>
+    </div>
+</div>
+<!--主舞台-->
+<div class="content" id="content" style="display:none;">
+ <!--第一页-->
+ <div class="page page1">
+ <p class="p1_topic page_moveFromLeft"><span>Exercise Your Body</span></p>
+ </div>
+ <!--第二页-->
+ <div class="page page2 hide">
+ <p class="p2_topic page_moveFromLeft"><span>You Will Get Not Only Health But Also Happiness</span></p>
+ </div>
+  <!--第三页-->
+<div class="page page3 hide">
+<button id="directNextpage" class="p3_button page_moveFromBottom delay1000" onClick="window.location.href='login.html'">Join Us</button> 
+</div>
+  
+</div>
+
+</body> 
+</html>

@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* 动画css */
+.page_moveFromTop{animation:moveFromTop .6s ease both;-webkit-animation:moveFromTop .6s ease both;}
+.page_moveFromLeft{animation:moveFromLeft 1.6s ease both;-webkit-animation:moveFromLeft 1.6s ease both;}
+.page_moveFromBottom{animation:moveFromBottom .6s ease both;-webkit-animation:moveFromBottom .6s ease both;}
+.page_moveFromRight{animation:moveFromRight .6s ease both;-webkit-animation:moveFromRight .6s ease both;}
+
+.page_opacity0To1{ animation:opacity0To1 .5s ease both;-webkit-animation:opacity0To1 .5s ease both;}
+
+/*飞入飞出动画*/
+.page-moveToTopbox{ animation:moveToTopbox .6s ease both;-webkit-animation:moveToTopbox .6s ease both;}
+.page-moveFromBottombox{ animation:moveFromBottombox .6s ease both;-webkit-animation:moveFromBottombox .6s ease both;}
+.page-moveToBottombox{ animation:moveToBottombox .6s ease both;-webkit-animation:moveToBottombox .6s ease both;}
+.page-moveFromTopbox{ animation:moveFromTopbox .6s ease both;-webkit-animation:moveFromTopbox .6s ease both;}
+.page_resizeBig { animation:resizeBig .6s ease both; -webkit-animation:resizeBig .6s ease both;}
+.page_moveToLeft { animation:moveToLeft .6s ease both;-webkit-animation:moveToLeft .6s ease both;}
+.page_moveToRight { animation:moveToRight .6s ease both;-webkit-animation:moveToRight .6s ease both;}
+
+.page_animate{animation:1.4s 3s ease forwards moveFromBottom,1.6s 4.4s linear infinite xuanzhuan,1.2s 6s ease forwards moveToLeft;}

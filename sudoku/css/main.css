@@ -1,0 +1,123 @@
+/*
+*Author:Inory;
+*Date:2017.3.23;
+*last modefied by:Inory;
+*last modefied time:2017.3.25;
+*/
+
+/*公用样式*/
+html{
+	background: #f1f1f1;
+}
+
+/*头部样式*/
+#header{
+	height: 60px;
+	background: #0597fa;
+}
+#header>.title{
+	margin: 0;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	line-height: 60px;
+}
+
+/*九宫格面板*/
+#main{
+	background: #f1f1f1;
+	text-align: center;
+}
+#main > .sudoku{
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+	margin-top: -600px;
+}
+#main > .sudoku > .list{
+	margin: 0;
+	padding: 0;
+	width: 600px;
+	height: 600px;
+}
+#main > .sudoku > .list::after{
+	display: block;
+	content: " ";
+	clear: both;
+}
+#main > .sudoku > .list li{
+	box-sizing: border-box;
+	width: 120px;
+	height: 120px;
+	background: #fff;
+	list-style: none;
+	float: left;
+	border-radius: 50%;
+	margin: 40px;
+	border: 2px solid #bbbbbb;
+}
+#main > .sudoku > .list .active{
+	background: #ffa726;
+}
+@media only screen and (max-width: 768px){
+	#main > .sudoku{
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
+		margin-top: -300px;
+	}
+	#main > .sudoku > .list{
+		margin: 0;
+		padding: 0;
+		width: 300px;
+		height: 300px;
+	}
+	#main > .sudoku > .list li{
+		box-sizing: border-box;
+		width: 80px;
+		height: 80px;
+		background: #fff;
+		list-style: none;
+		float: left;
+		border-radius: 50%;
+		margin: 10px;
+		border: 2px solid #bbbbbb;
+	}
+}
+
+
+/*选择区域*/
+#selector{
+	height:300px;
+	background: #f1f1f1;
+}
+#selector > #message{
+	display: block;
+	text-align: center;
+	font-size: 24px;
+	line-height: 100px;
+}
+#selector > .select-span{
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+/*底部区域*/
+#footer{
+	height: 60px;
+	background: #f1f1f1;
+}
+#footer > .split{
+	margin: 0;
+	color: #e3e8ea;
+}
+#footer > .author{
+	margin: 0;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	color: #666;
+	line-height: 60px;
+}

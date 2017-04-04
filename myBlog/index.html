@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Inory的博客</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="lib/normalize/normalize.css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!--[if lt IE 9]>
+      <script src="lib/html5shiv/html5shiv.min.js"></script>
+      <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header id="header">
+		<h1>Inory的Blog</h1>
+		<a href="javascript:;">
+			<span class="glyphicon glyphicon-align-justify"></span>
+		</a>
+	</header>
+	<!--侧边导航-->
+	<nav id="sideBar">
+		<section>
+			<div class="head">
+				<img src="img/header.png" alt="我的头像">
+			</div>
+			<pgroup>
+				<h1>Inory</h1>
+				<h2>一个前端的技术小白，分享自己学习前端开发的经验<br />希望大家多多支持！</h2>
+			</pgroup>
+		</section>
+		<ul class="list">
+			<li class="active"><a href="#">我的博客</a></li>
+			<li><a href="#">提交意见</a></li>
+			<li><a href="#">关注我的Github</a></li>
+		</ul>
+	</nav>
+	<!--/侧边导航-->
+	<!--主要区域-->
+		<section id="filterBox" class="clearfix">
+			<section id="mainBox" class="clearfix">
+				<!--我的博客内容区域-->
+				<section id="content_info" class="content">
+					<header>
+						<img src="img/banner1.png" alt="banner">
+					</header>
+					<article class="clearfix">
+						<pgroup>
+							<h1>CSS隐藏滚动条</h1>
+							<h2>应用如下 CSS 可以隐藏滚动条</h2>
+						</pgroup>
+						<p>.element::-webkit-scrollbar {display:none},如果要兼容 PC 其他浏览器（IE、Firefox 等），国外一位才人 John Kurlak 也研究出了一种办法。在容器外面再嵌套一层overflow:hidden 内部内容再限制尺寸和外部嵌套层一样，就变相隐藏了。<br>....................
+						</p>
+						<pre>
+	&lt;div class="outer-container"&gt;
+		&lt;div class="inner-container"&gt;
+			&lt;div class="content"&gt;
+		  ......
+		  	&lt;/div&gt;
+	  	&lt;/div&gt;
+	&lt;/div&gt;
+
+	.outer-container,.content {
+	  width: 200px; 
+	  height: 200px;
+	}
+	.outer-container {
+	  position: relative;
+	  overflow: hidden;
+	}
+	.inner-container {
+	  position: absolute; left: 0;
+	  overflow-x: hidden;
+	  overflow-y: scroll;
+	}
+	/* for Chrome */
+	.inner-container::-webkit-scrollbar {
+	  display: none;
+	}
+						</pre>
+						<button class="btn btn-success getMore">
+							查看全文
+						</button>
+					</article>
+					<article class="clearfix">
+						<pgroup>
+							<h1>滤镜图片变黑白</h1>
+							<h2>grayscale使图片变黑白</h2>
+						</pgroup>
+						<p>
+			            	利用grayscale使得原来彩色的图片变为黑白色的滤镜技术，无需PS处理，纯CSS实现此效果，代替了PS去实现简单的图片效果<br>....................
+						</p>
+						<pre>
+	filter: grayscale(100%);
+	filter: gray;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);       		
+						</pre>
+						<button class="btn btn-success getMore">
+							查看全文
+						</button>
+					</article>
+					<article class="clearfix">
+						<pgroup><<br>
+							<h1>后台的JSON封装</h1>
+							<h2>对象的序列化与反序列化实现JSON转化</h2>
+						</pgroup>
+						<p>
+							序列化是将一个对象转换为某种特定格式数据的过程，比如将一个java实例转化为xml或者json（或者其他规范）字符串。反序列化过程相反，是将一个xml、json（或者其他规范）转为一个java对象。具体针对json的序列化和反序列化来讲，个人认为有两种方式1.自己实现，比如使用反射等方式完成这种方式最终还是拼接字符串，属于自己造轮子了2.使用现有的json库，比如gson，jackson，fastjson等，他们提供了比较简单的序列化和反序列化的接口。比如使用fastjson，可以类似这种风格实现序列化（伪代码）<br>....................
+						</p>
+						<pre>
+	List&lt;User&gt; list = new List&lt;User&gt;();
+	list.add(new User());
+	list.add....
+	String jsonStr = Json.toJsonString(list);
+	google-json实现：
+
+		package com.demoone;  
+
+	import java.util.ArrayList;  
+	import java.util.List;  
+	   
+	import com.entity.Person;  
+	import com.google.gson.Gson;  
+	import com.google.gson.reflect.*;  
+	   
+	/*** 
+	  *  
+	  * 使用gson 
+	  * 进行序列化,反序列化的操作 
+	  * json 
+	  *  
+	  * **/  
+	public class UseGson {  		       
+	static Gson g=new Gson();
+
+	/** 
+	  *  
+	  * 由集合类型的实体类 
+	  * 转换成Json类型 
+	  *  
+	  * **/
+	public static void testToJSON(){ 
+		List&lt;Person&gt; list=new ArrayList&lt;&gt;();     
+		for(int i=0;i&lt;2;i++){
+			Person p=new Person(i, "散仙"+i, "北京市"+i, "54152541@qq.com", 500.0);  
+			list.add(p);  
+		}  
+		String json=g.toJson(list);  
+		System.out.println(json);  
+	} 
+
+	/** 
+	  * 由json转换为实体类 
+	  *  
+	  * */  
+	public static void testOneBeanFromJSON(){  
+		/** 
+		  * 转换一个Java Bean的时候 
+		  * 记住不能使用[],只有在使用集合的时候才可以使用  
+		  * 如上图贴的那个异常就是由此原因造成的，另外 
+		  * 格式要规范，中间不能出现空格字符 
+		  *  
+		  * **/  
+		String jsonBean="[{\"id\":0,\"name\":\"散仙0\",\"address\":\"北京市0\",\"email\":\"54152541@qq.com\",\"money\":500.0}]";  
+		Person p=g.fromJson(jsonBean, Person.class);  
+		System.out.println(p);  
+	}  
+       
+	/** 
+	  * 由json转换为实体类集合 
+	  *  
+	  * */  
+	public static void testListBeanFromJSON(){  
+		/** 
+		  * 转换一个集合 的实体Bean 
+		  * 注意前面加上[]方括号，代表一个数组 
+		  * **/  
+		String  jsonBeanList="[{\"id\":0,\"name\":\"散仙0\",\"address\":\"北京市0\",\"email\":\"54152541@qq.com\",\"money\":500.0},{\"id\":1,\"name\":\"散仙1\",\"address\":\"北京市1\",\"email\":\"54152541@qq.com\",\"money\":500.0}]";  
+		List&lt;Person&gt; lists=g.fromJson(jsonBeanList,new TypeToken&lt;List&lt;Person&gt;&gt;(){}.getType());  
+		System.out.println("反序列之后");  
+		for(Person pp:lists){  
+		System.out.println(pp);  
+		}  
+	}  
+
+	public static void main(String[] args) {  
+		testListBeanFromJSON();//测试集合反序列化  
+		testOneBeanFromJSON();//测试单个实体类反序列化  
+		//testToJSON();//测试序列化         
+	}
+ }
+						</pre>
+						<button class="btn btn-success getMore">
+							查看全文
+						</button>
+					</article>
+					<article class="clearfix">
+						<pgroup>
+							<h1>时间事件</h1>
+							<h2>js获取系统时间对象并且进行处理</h2>
+						</pgroup>
+						<p>当使用new Date()获取到系统的当前时间时，为一个很复杂的时间字符串，需要通过时间函数抓取年份、月份、星期、日期、小时、分钟、秒等信息，常见的时间函数如下:
+						<br>....................
+						</p>
+						<pre>
+	getFullYear();	//获取当前年份
+	getMonth();	//获取当前月份-1的值
+	getDay();	//获取星期
+	getDate();	//获取日期
+	getHours();	//获取小时
+	getMinutes();	//获取分钟
+	getSeconds();	//获取秒数
+						</pre>
+						<button class="btn btn-success getMore">
+							查看全文
+						</button>
+					</article>
+					<article class="clearfix">
+						<pgroup>
+							<h1>鼠标样式</h1>
+							<h2>鼠标CSS样式表，可改变鼠标的样式</h2>
+						</pgroup>
+						<p>
+							鼠标CSS样式表,通过类名或者id获取到元素并对元素内的鼠标样式进行修改,写法:
+							<br>....................
+						</p>
+						<pre>
+	.class{
+	    cursor:样式名;
+	}
+
+	默认		default
+	文字/编辑	text
+	自动		auto
+	手形		pointer, hand(hand是IE专有)
+	可移动对象	move
+	不允许		not-allowed
+	无法释放		no-drop
+	等待/沙漏	wait
+	帮助		help
+	十字准星		crosshair
+	向上改变大小	n-resize
+	向下改变大小	s_resize 与n-resize效果相同
+	向左改变大小	w-resize
+	向右改变大小	e-resize 与w-resize效果相同
+	向左上改变大小	nw-resize
+	向左下改变大小	sw-resize
+	向右上改变大小	ne-resize 与sw-resize效果相同
+	向右下改变大小	se-resize 与nw-resize效果相同
+	自定义光标	url('光标地址')
+						</pre>
+						<button class="btn btn-success getMore">
+							查看全部
+						</button>
+					</article>
+					<footer>
+						<p>
+							<a href="#">
+								个人博客，转载请注明出处&nbsp;&nbsp;@Inory&copy;
+							</a>
+						</p>
+					</footer>
+				</section>
+				<!--/我的博客内容区域-->
+				<!--提交意见区域-->
+				<section id="content_advice" class="content">
+					<header>
+						<img src="img/banner2.png" alt="banner">
+					</header>
+					<article>
+						<form role="form" class="form-inline">
+					 		<div class="form-group has-success">
+								<label class="sr-only">Name</label>
+								<input type="text" class="form-control input-lg" name="name" id="name" placeholder="请输入姓名">
+							</div>
+							<div class="form-group has-success">
+								<label class="sr-only">Email</label>
+								<input type="email" class="form-control input-lg" name="email" id="email" placeholder="请输入邮箱">
+							</div>
+						</form>
+						<form role="form">
+							<div class="form-group has-success">
+								<label class="sr-only">Subject</label>
+								<input type="text" class="form-control input-lg" name="subject" id="subject" placeholder="请输入主题">
+					 		</div>
+					 	</form>
+				 		<form role="form">
+				 			<div class="form-group has-success">
+								<label class="sr-only">Message</label>
+								<textarea  id="message" cols="10" class="form-control input-lg" placeholder="请输入内容"></textarea>
+							</div>
+				 		</form>
+				 		<button class="btn btn-success adviceReset btn-lg">
+				 			重置表单
+				 		</button>
+				 		<button class="btn btn-success adviceSubmit btn-lg">
+				 			提交表单
+				 		</button>
+					</article>
+					<article>
+						<pgroup>
+							<h1>上官晨奕</h1>
+							<h2>2017-3-11 13:20:51</h2>
+						</pgroup>
+						<p>
+							这个博客网站很不错，希望博主继续努力加油！我也会继续关注下去的
+						</p>
+					</article>
+					<article>
+					<pgroup>
+						<h1>刘越</h1>
+						<h2>2017-3-11 13:28:51</h2>
+					</pgroup>
+					<p>
+						这个博客网站则尼玛棒棒哦，希望能搞快点，好让我看到点新的东西，最后，博主，好人啊！
+					</p>
+					</article>
+					<article>
+						<pgroup>
+							<h1>卞靖</h1>
+							<h2>2017-3-11 13:45:51</h2>
+						</pgroup>
+						<p>
+							可以可以，感觉还是不错的，不管是整体网站风格还是外观，都棒棒哒
+						</p>
+					</article>
+					<article>
+						<pgroup>
+							<h1>田甲申</h1>
+							<h2>2017-3-11 14:50:14</h2>
+						</pgroup>
+						<p>
+							就那样吧，至少还是可以的！
+						</p>
+					</article>
+					<article>
+						<pgroup>
+							<h1>张绍贤</h1>
+							<h2>2017-3-11 18:42:21</h2>
+						</pgroup>
+						<p>
+							哇哦，哎哟，不错哦，兄弟，求教教我怎么搞得！
+						</p>
+					</article>
+					<footer>
+						<p>
+							<a href="#">
+								个人博客，转载请注明出处&nbsp;&nbsp;@Inory&copy;
+							</a>
+						</p>
+					</footer>
+				</section>
+				<!--/提交意见区域-->
+				<!--关注我的Github-->
+				<section id="content_Github" class="content">
+					<header>
+						<img src="img/banner3.png" alt="banner">
+					</header>
+					<article>
+						<pgroup>
+							<h1>这里是博主的Github账号以及二维码</h1>
+							<h2>希望大家关注一下，本微博的开发的源码将会供大家参考以及clone</h2>
+						</pgroup>
+						<p>
+							Github地址：
+							<a target="_blank" href="https://github.com/InoryAll/">https://github.com/InoryAll/</a>
+						</p>
+						<button class="btn btn-success btn-lg">
+							关注博主
+						</button>
+						<div class="imgBox">
+							<img src="img/github.png" alt="Github">
+						</div>
+					</article>
+					<article>
+						<pgroup>
+							<h1>这里是博主的邮箱地址</h1>
+							<h2>希望大家关注一下，大家可以通过邮箱联系博主有关问题</h2>
+						</pgroup>
+						<p>
+							邮箱地址：
+							<a target="_blank" href="http://www.15861368488@163.com">15861368488@163.com</a>
+						</p>
+						<button class="btn btn-success btn-lg">
+							关注博主
+						</button>
+						<div class="imgBox">
+							<img src="img/email.png" alt="Github">
+						</div>
+					</article>
+					<article>
+						<pgroup>
+							<h1>这里是博主的QQ账号</h1>
+							<h2>希望大家关注一下，QQ上可以询问博主一些开发以及技术相关的问题</h2>
+						</pgroup>
+						<p>
+							QQ账号：
+							<a href="javascript:;">110873204</a>
+						</p>
+						<button class="btn btn-success btn-lg">
+							关注博主
+						</button>
+						<div class="imgBox">
+							<img src="img/qq.png" alt="Github">
+						</div>
+					</article>
+					<footer>
+						<p>
+							<a href="#">
+								个人博客，转载请注明出处&nbsp;&nbsp;@Inory&copy;
+							</a>
+						</p>
+					</footer>
+				</section>
+				<!--/关注我的Github-->
+			</section>
+		</section>
+	<!--/主要区域-->
+	<!--弹出框-->
+	<div class="container alertContainer">	
+		<div class="alert alert-success alertDiv container" role="alert">
+			<button type="button" class="close hideBtn" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<strong>提醒:&nbsp;&nbsp;</strong><span id="submitMessage">你已经成功提交表单，谢谢你的意见!</span>
+		</div>
+	</div>
+	<!--/弹出框-->
+	<script src="lib/jquery/jquery-3.1.1.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+/*
+*@Author:Inory
+*@Date:2017.3.13
+*@Last Modefied by:Inory
+*@Last Modefied time:2017.3.13
+*/
+
+/*
+*公共样式
+*/
+html{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	font-family: '微软雅黑';
+}
+body{
+	width: 100%;
+	height: auto;
+}
+ul{
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+.content{
+	width: calc(100% - 50rem);
+	height: auto;
+}
+.content > header > img{
+	width: 100%;
+	height: 32rem;
+}
+.content > article{
+	width: 100%;
+	height: auto;
+	padding:4rem 10rem 4rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.content > article{
+	border-bottom: 8px solid #f4f4f4;
+}
+.content > article:last-of-type{
+	border: none;
+}
+.content > article > pgroup >h1{
+	color: #4acaa8;
+	line-height: 4rem;
+}
+.content > article > pgroup >h2{
+	color: #777777;
+	font-size: 2rem;
+	line-height: 4rem;
+}
+.content > article > p{
+	width: 100%;
+	word-wrap:break-word;
+	line-height: 3.2rem;
+	color: #9e9e9e;
+}
+.content footer{
+	width: 100%;
+	height: 10rem;
+	background: #fafafa;
+	padding: 4rem;
+	text-align: center;
+}
+.content footer > p{
+	font-size: 1.6rem;
+}
+.content footer > p > a{
+	color: #c0c0c0;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px){
+	.content{
+		width: calc(100% - 40rem);
+	}
+	.content > article{
+		padding: 4rem 6rem 4rem;;
+	}
+}
+@media only screen and (min-width:1200px)  and (max-width: 1400px){
+	.content{
+		width: calc(100% - 32rem);
+	}
+	.content > article{
+		padding: 4rem 4rem 4rem;
+	}
+}
+@media only screen and (max-width:1200px)
+{
+	.content{
+		width: 100%;
+	}
+	.content > article{
+		padding: 2rem 2rem 2rem;
+	}
+}
+
+/*
+*header头部样式
+*/
+#header{
+	display: none;
+	width: calc(100% - 50rem);
+	height: 5rem;
+	background: #000;
+}
+#header > h1{
+	display: block;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	float: left;
+	font-size: 2.4rem;
+	margin-left: 2rem;
+	height: 5rem;
+	line-height: 5rem;
+}
+#header > a{
+	float: right;
+	height: 2.4rem;
+	margin-right: 2rem;
+	margin-top: 1.3rem;
+}
+#header > a > span{
+	font-size: 2.4rem;
+	color: #fff;
+	display: block;
+}
+#header > a:hover{
+	text-decoration: none;
+}
+#header > a:hover span{
+	color: #4acaa8;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px){
+	#header{
+		width: calc(100% - 40rem);
+	}
+}
+@media only screen and (min-width:1200px)  and (max-width: 1400px){
+	#header{
+		width: calc(100% - 34rem);
+	}
+}
+@media only screen and (max-width:1200px)
+{
+	#header{
+		width: 100%;
+		display: block;
+	}
+}
+@media only screen and (max-width:600px)
+{
+	#header > h1{
+		display: none;
+	}
+}
+
+/*
+*主页面盒子样式
+*/
+#filterBox{
+	width: calc(100% - 50rem);
+	overflow: hidden;
+}
+#mainBox{
+	width: calc(100%*3);
+	height: auto;
+	margin-left: 0%;
+}
+#content_info,#content_advice,#content_Github{
+	float: left;
+	width: calc(100% / 3);
+	overflow-y: hidden;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px){
+	#filterBox{
+		width: calc(100% - 40rem);
+	}
+}
+@media only screen and (min-width:1200px)  and (max-width: 1400px){
+	#filterBox{
+		width: calc(100% - 34rem);
+	}
+}
+@media only screen and (max-width:1200px)
+{
+	#filterBox{
+		width:100%;
+	}
+}
+
+/*
+*sideBar侧边导航栏样式
+*/
+#sideBar{
+	width:50rem;
+	height: 100%;
+	display: block;
+	position: fixed;
+	right: 0;
+	top: 0;
+	background: #4acaa8;
+}
+#sideBar > section{
+	height: 60%;
+}
+#sideBar > section > .head{
+	position: relative;
+	height: 50%;
+}
+#sideBar > section > .head >img{
+	position: absolute;
+	width: 40%;
+	border-radius: 50%;
+	border: 10px solid #fff;
+	left: 30%;
+	top: 5rem;
+}
+#sideBar > section > pgroup{
+	height: 50%;
+}
+#sideBar > section > pgroup > h1{
+	color: #fff;
+	text-align: center;
+}
+#sideBar > section > pgroup > h2{
+	font-size: 2rem;
+	text-align: center;
+	color: #c2ede2;
+	font-style: italic;
+	padding: 1rem;
+}
+#sideBar .list{
+	height: 40%;
+	padding-top: 0.6rem;
+}
+#sideBar .list>li{
+	display: block;
+	height:8rem;
+	color:#fff;
+	font-size: 2.4rem;
+	text-align: center;
+	line-height: 8rem;
+}
+#sideBar .list > li > a{
+	display: block;
+	height: 100%;
+	color: #fff;
+}
+.active a{
+	color: #4acaa8 !important;
+	background: #fff !important;
+}
+@media only screen and (min-width: 1600px)
+{
+	#sideBar{
+		display: block;
+		width:50rem; 
+		right: 0 !important;
+	}
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px)
+{
+	#sideBar{
+		display: block !important;
+		width:40rem; 
+		right: 0 !important;
+	}
+} 
+@media only screen and (min-width:1200px)  and (max-width: 1400px)
+{
+	#sideBar{
+		display: block !important;
+		width:40rem; 
+		right: 0 !important;
+	}
+}
+@media only screen and (max-width: 1200px){
+	#sideBar{
+		display: none;
+		width:30rem; 
+	}
+}
+@media only screen and (max-width: 600px)
+{
+	#sideBar{
+		display: none;
+		width:22rem; 
+	}
+}
+@media only screen and (max-height:700px){
+		#sideBar .list>li{
+		display: block;
+		height:6rem;
+		color:#fff;
+		font-size: 2.4rem;
+		text-align: center;
+		line-height: 6rem;
+	}
+}
+
+/*
+*content内容部分样式
+*/
+#content_info > article > pre{
+	display: none;
+	width: 100%;
+	word-wrap: break-word;
+	white-space: pre-wrap; 
+	color: #9e9e9e;
+} 
+#content_info .getMore{
+	float: right;
+}
+
+/*
+*content意见部分样式
+*/
+#content_advice > article:first-of-type > form{
+	padding: 1rem;
+}
+#content_advice > article textarea{
+	resize: none;
+}
+#content_advice > article:first-of-type button{
+	float: right;
+	margin-right: 2rem;
+}
+
+/*
+*content部分Github样式
+*/
+#content_Github a{
+	color: #4acaa8;
+}
+#content_Github > article > button{
+	float: right;
+	margin-right: 2rem;
+}
+#content_Github > article .imgBox{
+	height: 0px;
+	opacity: 0;
+}
+#content_Github > article img{
+	width: 30rem;
+	height: 100%;
+}
+
+/*
+*弹出框样式
+*/
+.alertContainer{
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 1rem;
+}
+.alertDiv{
+	display: none;
+	margin: 0 auto;
+}
+@media only screen and (max-width:1200px){
+	.alertContainer{
+		top: 6rem;
+	}
+}

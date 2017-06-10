@@ -1,0 +1,330 @@
+/*index.css*/
+
+/*公共样式*/
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/*index.css*/
+
+/*header*/
+#header ul{
+    float: right;
+    padding: 10px 0;
+}
+#header ul li{
+    border-right:1px solid #a699b2;
+    float: left;
+}
+#header ul li:last-child{
+    border-right: none;
+}
+#header ul li a{
+    display: block;
+    color: #333;
+    line-height: 18px;
+    padding: 0 12px;
+    font-size: 14px;
+}
+#header ul li:last-child a{
+    padding-right: 0;
+}
+
+/*logo*/
+#logo img{
+    display: block;
+    width: 170px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/*menu*/
+#menu ul{
+    width: 50%;
+    margin-left: 25%;
+    padding: 10px 0;
+}
+#menu ul li{
+    width:16.66666667%;
+    float: left;
+    text-align: center;
+}
+#menu ul li a{
+    color: #666;
+    font-size: 16px;
+}
+#menu ul li a:hover{
+    font-size: 18px;
+}
+#menu ul li a.active{
+    font-size: 18px;
+}
+
+/*carousel*/
+#carousel .carousel{
+    width: 100%;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+    position: relative;
+    margin-top: -20px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    display: block;
+    background: transparent;
+    border:1px solid #fff;
+    -webkit-backface-visibility: visible;
+    -webkit-transition: opacity 200ms ease;
+    -moz-transition: opacity 200ms ease;
+    -ms-transition: opacity 200ms ease;
+    -o-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #fff;
+}
+#carousel .carousel .prev,#carousel .carousel .next{
+    position: absolute;
+    display: block;
+    width: 20px;
+    height:66px;
+    background-size: 20px 66px;
+    top:calc(50% - 33px);
+}
+#carousel .carousel .prev:hover,#carousel .carousel .next:hover{
+    cursor:pointer;
+}
+#carousel .carousel .prev{
+    background-image: url("../img/pre.png");
+    left: -30px;
+}
+#carousel .carousel .next{
+    background-image: url("../img/next.png");
+    right: -30px;
+}
+#carousel .carousel .item h4{
+    position: absolute;
+    top:140px;
+    left:100px;
+    margin:0;
+    padding:0;
+    font-size: 32px;
+}
+#carousel .carousel .owl-item:nth-child(6n+4) h4{
+    color: #145f57;
+}
+#carousel .carousel .owl-item:nth-child(6n+5) h4{
+    color: #804500;
+}
+#carousel .carousel .owl-item:nth-child(6n) h4{
+    color: #fff;
+}
+#carousel .carousel .owl-item:nth-child(6n+1) h4{
+    color: #0078a5;
+}
+#carousel .carousel .owl-item:nth-child(6n+2) h4{
+    color: #fff;
+}
+#carousel .carousel .owl-item:nth-child(6n+3) h4{
+    color: #165c5f;
+}
+#carousel .carousel .item div{
+    position: absolute;
+    top:190px;
+    left:100px;
+}
+#carousel .carousel .item div p{
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    font-size:16px;
+}
+#carousel .carousel .owl-item:nth-child(6n+4) div p{
+    color: #145f57;
+}
+#carousel .carousel .owl-item:nth-child(6n+5) div p{
+    color: #804500;
+}
+#carousel .carousel .owl-item:nth-child(6n) div p{
+    color: #fff;
+}
+#carousel .carousel .owl-item:nth-child(6n+1) div p{
+    color: #0078a5;
+}
+#carousel .carousel .owl-item:nth-child(6n+2) div p{
+    color: #fff;
+}
+#carousel .carousel .owl-item:nth-child(6n+3) div p{
+    color: #165c5f;
+}
+#carousel .carousel .item a{
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 34px;
+    top: 330px;
+    left: 100px;
+    text-align: center;
+    line-height: 34px;
+    box-sizing: border-box;
+}
+#carousel .carousel .owl-item:nth-child(6n+4) a{
+    color: #145f57;
+    border: 1px solid #145f57;
+}
+#carousel .carousel .owl-item:nth-child(6n+5) a{
+    color: #804500;
+    border: 1px solid #804500;
+}
+#carousel .carousel .owl-item:nth-child(6n) a{
+    color: #fff;
+    border: 1px solid #fff;
+}
+#carousel .carousel .owl-item:nth-child(6n+1) a{
+    color: #0078a5;
+    border:1px solid #0078a5;
+}
+#carousel .carousel .owl-item:nth-child(6n+2) a{
+    color: #fff;
+    border: 1px solid #fff;
+}
+#carousel .carousel .owl-item:nth-child(6n+3) a{
+    color: #165c5f;
+    border:1px solid #165c5f;
+}
+
+/*function*/
+#function .item{
+    float: left;
+    width: 33.333333%;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+#function .item a{
+    display: block;
+    position: relative;
+    width:100px;
+    height:100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-size: 100px 100px;
+}
+#function .item:nth-child(1) a{
+    background-image: url("../img/bg1.png");
+}
+#function .item:nth-child(2) a{
+    background-image: url("../img/bg2.png");
+}
+#function .item:nth-child(3) a{
+    background-image: url("../img/bg3.png");
+}
+#function .item a img{
+    display: block;
+    position: absolute;
+    transition: top 0.2s;
+}
+#function .item:nth-child(1) a img{
+    width: 73px;
+    left: 19px;
+    top: 0;
+}
+#function .item:nth-child(2) a img{
+    width: 95px;
+    left: -5px;
+    top: -8px;
+}
+#function .item:nth-child(3) a img{
+    width: 54px;
+    left: 14px;
+    top: 0;
+}
+#function .item:nth-child(1) a:hover > img{
+    top: -4px;
+}
+#function .item:nth-child(2) a:hover > img{
+    top: -12px;
+}
+#function .item:nth-child(3) a:hover > img{
+    top: -4px;
+}
+#function .item h4{
+    margin: 0;
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+}
+#function .item p{
+    margin: 0;
+    padding: 0;
+    color: #666;
+    text-align: center;
+    line-height: 24px;
+}
+
+/*footer*/
+#footer .container{
+    background: #f4f4f4;
+    padding-bottom: 10px;
+}
+#footer .list{
+    margin-bottom: 70px;
+}
+#footer ul{
+    float: left;
+    width: 15%;
+    margin-top: 40px;
+}
+#footer ul:first-child{
+    margin-left: 20%;
+}
+#footer ul:last-child{
+    margin-right: 20%;
+}
+#footer ul li a{
+    color: #333;
+    font-size: 16px;
+    line-height: 30px;
+}
+#footer ul li a:hover{
+    text-decoration: underline;
+}
+#footer ul li:first-child{
+    padding: 10px 0;
+}
+#footer ul li:first-child a{
+    font-weight: bold;
+    font-size: 18px;
+}
+#footer ul li:first-child a:hover{
+    text-decoration: none;
+}
+#footer ul li a img{
+    width: 100px;
+}
+#footer p{
+    margin: 0;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+

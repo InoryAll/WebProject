@@ -1,0 +1,182 @@
+/*login.css*/
+
+/*公共样式*/
+body{
+    width: 100%;
+    height: 100%;
+    background: #eee;
+}
+input{
+    outline: none;
+}
+
+/*login.css*/
+#content{
+    width: 100%;
+    height: 760px;
+    padding: 100px 0;
+}
+#content .login-content{
+    width: 80%;
+    min-width: 900px;
+    height: 560px;
+    margin: 0 auto;
+    box-shadow: 0 8px 8px 0 rgba(51,51,51,.05),0 0 8px 0 rgba(51,51,51,.15);
+}
+#content .login-content .carousel-box{
+    float: left;
+    width:50%;
+    height: 560px;
+    background: #f6f6f6;
+}
+#content .login-content .login-box{
+    float: left;
+    width:50%;
+    height: 560px;
+    background: #fdfdfd;
+}
+#content .login-content .login-box h3{
+    padding: 0;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+#content .login-content .login-box .input-wrap{
+    min-width: 450px;
+    width: 50%;
+    text-align: center;
+    padding: 25px 70px 0;
+}
+#content .login-content .login-box .input-wrap .input-username,#content .login-content .login-box .input-wrap .input-password{
+    height: 46px;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 25px auto;
+}
+#content .login-content .login-box .input-wrap .input-username{
+    margin-top: 15px;
+}
+#content .login-content .login-box .input-wrap .input-username input,#content .login-content .login-box .input-wrap .input-password input{
+    height: 46px;
+    display: block;
+    border: none;
+    background: none;
+    float: left;
+    width: 276px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+#content .login-content .login-box .input-wrap .input-username .icon-username,#content .login-content .login-box .input-wrap .input-password .icon-password{
+    line-height: 46px;
+    font-size: 18px;
+    color: #999;
+    float: left;
+    padding: 0 0 0 10px;
+}
+#content .login-content .login-box .input-wrap .regedit{
+    font-size: 14px;
+    color: #999;
+    float: left;
+}
+#content .login-content .login-box .input-wrap .regedit:hover{
+    text-decoration: none;
+}
+#content .login-content .login-box .input-wrap .forget{
+    font-size: 14px;
+    color: #24b598;
+    float: right;
+}
+#content .login-content .login-box .input-wrap .forget:hover{
+    text-decoration: none;
+}
+#content .login-content .login-box .input-wrap .login-btn{
+    display: block;
+    background: #eee;
+    color: #bebebe;
+    width: 100%;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 2px;
+    margin: 20px 0 70px;
+    cursor: not-allowed;
+}
+#content .login-content .login-box .split{
+    display: block;
+    padding: 0 70px;
+}
+#content .login-content .login-box .split .split-left{
+    float: left;
+    width: 120px;
+    border: 1px solid #cacaca;
+    margin-top: 9px;
+}
+#content .login-content .login-box .split .split-or{
+    width: 76px;
+    text-align: center;
+    float: left;
+    font-size: 14px;
+    color: #cacaca;
+}
+#content .login-content .login-box .split .split-right{
+    float: right;
+    width: 120px;
+    border: 1px solid #cacaca;
+    margin-top: 9px;
+}
+#content .login-content .other-box,#content .login-content .other-text{
+    padding: 10px 70px 0;
+}
+#content .login-content .other-box .weixin-login,#content .login-content .other-box .weibo-login{
+    font-size: 60px;
+    color: #dcdcdc;
+    display: block;
+    float: left;
+    line-height: 60px;
+}
+#content .login-content .other-box .weixin-login{
+    margin-left: 60px;
+}
+#content .login-content .other-box .weibo-login{
+    margin-left: 90px;
+}
+#content .login-content .other-text .weixin-text{
+    color: #999;
+    margin-left: 66px;
+    font-size: 12px;
+}
+#content .login-content .other-text .weibo-text{
+    color: #999;
+    margin-left: 96px;
+    font-size: 12px;
+}
+#content .login-content .other-text{
+    padding: 2px 70px 0;
+}
+#content .login-content .other-text .weibo-text:hover{
+    text-decoration: none;
+}
+#content .login-content .other-text .weixin-text:hover{
+    text-decoration: none;
+}
+#content .login-content .other-box .weixin-login:hover,#content .login-content .other-box .weibo-login:hover{
+    color: #68b560;
+}
+#content .login-content .login-box .input-wrap .input-username.active,#content .login-content .login-box .input-wrap .input-password.active{
+    border: 1px solid #209e85;
+    border-radius: 4px;
+}
+#content .login-content .login-box .input-wrap .login-btn.active{
+    background: #23b598;
+    box-shadow: 0 4px 15px 0 rgba(36,181,151,.3);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+

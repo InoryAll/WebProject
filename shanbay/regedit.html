@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!--引入css样式表-->
+    <link rel="stylesheet" href="lib/normalize/normalize.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/tether/1.3.6/css/tether.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/owl-carousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/regedit.css">
+
+    <!--引入js-->
+    <script type="text/javascript" src="lib/html5shiv/html5shiv.min.js"></script>
+</head>
+<body>
+<!--header-->
+<header id="header">
+    <div class="container clearfix">
+        <img src="img/login_logo.png" alt="">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="pages/word.html">单词</a></li>
+            <li><a href="#">听力</a></li>
+            <li><a href="#">口语</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">读书</a></li>
+            <li><a href="#">炼句</a></li>
+            <li><a href="#">课程</a></li>
+            <li><a href="#">社区</a></li>
+        </ul>
+        <div class="top-right">
+            <a href="#" class="help">
+                帮助
+            </a>
+            <a href="login.html" class="login">
+                登录
+            </a>
+            <span class="split-dot">
+                ·
+            </span>
+            <a href="regedit.html" class="regedit">
+                注册
+            </a>
+        </div>
+    </div>
+</header>
+<!--/header-->
+<!--content-->
+<section id="content">
+    <div class="container">
+        <div class="regedit-content">
+            <div class="carousel-box">
+                <div class="carousel">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="img/login_item1.png" alt="">
+                            <h4>
+                                坚持打卡
+                            </h4>
+                            <p>
+                                享受学习的快乐
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="img/login_item2.png" alt="">
+                            <h4>
+                                学习社区
+                            </h4>
+                            <p>
+                                加入小组，和小伙伴们一起坚持
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="img/login_item3.png" alt="">
+                            <h4>
+                                考试保险
+                            </h4>
+                            <p>
+                                备考用扇贝，没过就赔钱
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="img/login_item4.png" alt="">
+                            <h4>
+                                扇贝课程
+                            </h4>
+                            <p>
+                                最少的时间，最好的效果
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="regedit-box">
+                <h3>
+                    欢迎来到扇贝
+                </h3>
+                <form action="" method="post" class="regedit-form">
+                    <div class="input-wrap">
+                        <div class="input-username active">
+                            <span class="glyphicon glyphicon-user"></span>
+                            <input type="text" placeholder="用户名" name="username">
+                        </div>
+                        <div class="input-email">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            <input type="text" placeholder="Email 地址" name="email">
+                        </div>
+                        <div class="input-password">
+                            <span class="glyphicon glyphicon-lock"></span>
+                            <input type="password" placeholder="密码" name="password">
+                        </div>
+                        <div class="input-repassword">
+                            <span class="glyphicon glyphicon-lock"></span>
+                            <input type="password" placeholder="确认密码" name="repassword">
+                        </div>
+                        <div class="input-validate">
+                            <div class="validate">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <input type="text" placeholder="验证码(不区分大小写)" name="validate">
+                            </div>
+                            <img src="img/validate.png" alt="">
+                        </div>
+                        <div class="other clearfix">
+                            <input type="checkbox" name="agreement" value="false">
+                            <div class="checkbox">
+                                <span class="glyphicon glyphicon-ok"></span>
+                            </div>
+                            <span>我已阅读并同意扇贝网的</span>
+                            <a href="#">使用协议</a>
+                        </div>
+                        <button class="regedit-btn" disabled type="button">注册</button>
+                    </div>
+                </form>
+                <div class="split clearfix">
+                    <div class="split-left"></div>
+                    <div class="split-or">OR</div>
+                    <div class="split-right"></div>
+                </div>
+                <div class="other-box clearfix">
+                    <i class="icon iconfont icon-weixin weixin-regedit"></i>
+                    <i class="icon iconfont icon-weibo weibo-regedit"></i>
+                </div>
+                <div class="other-text">
+                    <a href="#" class="weixin-text">微信登录</a>
+                    <a href="#" class="weibo-text">微博登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/content-->
+
+<!--引入js-->
+<script type="text/javascript" src="lib/jquery/jquery-1.12.4.min.js"></script>
+<script src="//cdn.bootcss.com/tether/1.3.6/js/tether.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="lib/owl-carousel/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/carsousel.js"></script>
+<script type="text/javascript" src="js/regedit.js"></script>
+</body>
+</html>

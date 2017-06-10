@@ -1,0 +1,239 @@
+/*regedit.css*/
+
+/*公用样式*/
+body{
+    width: 100%;
+    height: 100%;
+    background: #eee;
+}
+input{
+    outline: none;
+}
+
+/*regedit.css*/
+#content{
+    width: 100%;
+    padding: 40px 0;
+}
+#content .regedit-content{
+    width: 900px;
+    margin: 0 auto;
+    height: 770px;
+    background: #fdfdfd;
+    border-radius: 4px;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,.05),0 0 8px 0 rgba(0,0,0,.15);
+}
+#content .regedit-content .carousel-box{
+    width: 50%;
+    float: left;
+    height: 770px;
+    background: #f6f6f6;
+}
+#content .carousel-box .carousel .item img{
+    width: auto;
+    height: 340px;
+    margin: 100px auto 0;
+}
+#content .carousel-box .carousel .item h4{
+    margin-top: 40px;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 50px;
+}
+#content .regedit-content .regedit-box{
+    width: 50%;
+    padding: 50px 70px;
+    float: left;
+    text-align: center;
+}
+#content .regedit-content .regedit-box h3{
+    font-size: 28px;
+    margin-top: 10px;
+}
+#content .regedit-content .regedit-box .input-wrap{
+    width: 100%;
+    padding: 25px 0 0;
+}
+#content .regedit-content .regedit-box .input-wrap div{
+    width: 100%;
+    margin-bottom: 25px;
+    height: 46px;
+    background: #fff;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+}
+#content .regedit-content .regedit-box .input-wrap span{
+    font-size: 18px;
+    line-height: 46px;
+    color: #999;
+    float: left;
+    padding: 0 0 0 10px;
+}
+#content .regedit-content .regedit-box .input-wrap input{
+    height: 46px;
+    display: block;
+    border: none;
+    background: none;
+    float: left;
+    width: 276px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+#content .regedit-content .regedit-box .input-wrap .input-validate{
+    border: none;
+}
+#content .regedit-content .regedit-box .input-wrap .input-validate .validate{
+    width: 198px;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    float: left;
+}
+#content .regedit-content .regedit-box .input-wrap .input-validate .validate input{
+    width: 166px;
+}
+#content .regedit-content .regedit-box .input-wrap .input-validate img{
+    display: block;
+    float: left;
+    height: 46px;
+    margin-left: 20px;
+}
+#content .regedit-content .regedit-box .input-wrap .other{
+    width: 100%;
+    margin-bottom: 25px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+#content .regedit-content .regedit-box .input-wrap .other input{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    visibility: hidden;
+}
+#content .regedit-content .regedit-box .input-wrap .other .checkbox{
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    float: left;
+    margin-left: -20px;
+    margin-top: 0;
+}
+#content .regedit-content .regedit-box .input-wrap .other .checkbox.active{
+    background: #23b598;
+}
+#content .regedit-content .regedit-box .input-wrap .other .checkbox span{
+    display: block;
+    width: 18px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    float: left;
+    padding: 0;
+    margin: 0 auto;
+}
+#content .regedit-content .regedit-box .input-wrap .other > span{
+    font-size: 14px;
+    line-height: normal;
+    color: #999;
+    float: left;
+    padding: 0;
+    margin-left: 10px;
+}
+#content .regedit-content .regedit-box .input-wrap .other a{
+    float: left;
+    font-size: 14px;
+    color: #24b598;
+    padding: 1px 5px;
+}
+#content .regedit-content .regedit-box .input-wrap .other a:hover{
+    text-decoration: none;
+}
+#content .regedit-content .regedit-box .input-wrap .regedit-btn{
+    width: 100%;
+    background: #eee;
+    padding: 5px 20px;
+    text-align: center;
+    color: #bebebe;
+    border: none;
+    border-radius: 2px;
+    cursor: not-allowed;
+    margin-bottom: 70px;
+}
+#content .regedit-content .regedit-box .input-wrap .regedit-btn.active{
+    background: #23b598;
+    box-shadow: 0 4px 15px 0 rgba(36,181,151,.3);
+    color: #fff;
+    cursor: pointer;
+}
+#content .regedit-content .regedit-box .split{
+    display: block;
+}
+#content .regedit-content .regedit-box .split .split-left{
+    float: left;
+    width: 120px;
+    border: 1px solid #cacaca;
+    margin-top: 9px;
+}
+#content .regedit-content .regedit-box .split .split-or{
+    float: left;
+    width: 70px;
+    text-align: center;
+    color: #cacaca;
+    font-size: 14px;
+}
+#content .regedit-content .regedit-box .split .split-right{
+    float: left;
+    width: 120px;
+    border: 1px solid #cacaca;
+    margin-top: 9px;
+}
+#content .regedit-content .regedit-box .other-box i{
+    font-size: 60px;
+    color: #dcdcdc;
+    display: block;
+    float: left;
+    line-height: 60px;
+}
+#content .regedit-content .other-box .weixin-regedit{
+    margin-left: 60px;
+}
+#content .regedit-content .other-box .weibo-regedit{
+    margin-left: 80px;
+}
+#content .regedit-content .other-text .weixin-text{
+    color: #999;
+    margin-left: 10px;
+    font-size: 12px;
+}
+#content .regedit-content .other-text .weibo-text{
+    color: #999;
+    margin-left: 86px;
+    font-size: 12px;
+}
+#content .regedit-content .other-text .weixin-text:hover{
+    text-decoration: none;
+}
+#content .regedit-content .other-text .weibo-text:hover{
+    text-decoration: none;
+}
+#content .regedit-content .other-box .weixin-regedit:hover{
+    color: #68b560;
+}
+#content .regedit-content .other-box .weibo-regedit:hover{
+    color: #68b560;
+}
+#content .regedit-content .regedit-box .input-wrap .input-username.active,#content .regedit-content .regedit-box .input-wrap .input-email.active,#content .regedit-content .regedit-box .input-wrap .input-password.active,#content .regedit-content .regedit-box .input-wrap .input-repassword.active,#content .regedit-content .regedit-box .input-wrap .validate.active{
+    border: 1px solid #209e85;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+

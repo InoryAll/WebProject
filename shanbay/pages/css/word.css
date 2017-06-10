@@ -1,0 +1,697 @@
+/*word.css*/
+
+/*公共样式*/
+body{
+    width: 100%;
+    height: 100%;
+    background: #eee;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+input{
+    outline: none;
+}
+
+/*word.css*/
+#navigation{
+    width: 100%;
+    background: #f5f5f5;
+}
+#navigation ul{
+    display: block;
+    width: 100%;
+    height: 48px;
+    margin: 0 auto;
+}
+#navigation ul li{
+    list-style: none;
+    float: left;
+    line-height: 48px;
+
+}
+#navigation ul li a {
+    display: block;
+    padding: 0 15px;
+    font-size: 15px;
+    color: #666;
+    text-decoration: none;
+    border-bottom: 2px solid hsla(0,0%,100%,0);
+}
+#navigation ul li a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid #209e85;
+    transition: all 1s;
+}
+#navigation ul li.active a{
+    border-bottom: 2px solid #209e85;
+}
+#content{
+    width: 100%;
+}
+#content .content-box{
+    width: 100%;
+    padding: 40px 30px;
+    background: #fdfdfd;
+}
+#content .words-learning{
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+#content .words-learning h1{
+    font-size: 26px;
+    color: #666;
+    margin: 0;
+    line-height: 60px;
+}
+#content .words-learning .split{
+    width: 100%;
+    border-bottom:1px solid #eee;
+}
+#content .words-learning .choices{
+    box-sizing: border-box;
+    width: 100%;
+    height: 560px;
+    padding: 130px 50px;
+}
+#content .words-learning .choices .usual{
+    width: 100%;
+    margin-bottom: 50px;
+}
+#content .words-learning .choices .usual .item{
+    display: block;
+    float: left;
+    width: 13%;
+    text-align: center;
+    background: #f0f8f6;
+    border: 1px solid #cae2d9;
+    border-radius: 4px;
+    margin-right: 2%;
+}
+#content .words-learning .choices .usual .item a{
+    line-height: 48px;
+    color: #209e85;
+    font-size: 16px;
+}
+#content .words-learning .choices .usual .item:hover{
+    background: #e1f0ed;
+}
+#content .words-learning .choices .other{
+    width: 100%;
+}
+#content .words-learning .choices .other .item{
+    display: block;
+    float: left;
+    width: 13%;
+    text-align: center;
+    background: #f0f8f6;
+    border: 1px solid #cae2d9;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-right: 2%;
+}
+#content .words-learning .choices .other .item a{
+    line-height: 48px;
+    color: #209e85;
+    font-size: 16px;
+}
+#content .words-learning .choices .other .item:hover{
+    background: #e1f0ed;
+}
+#content .extand{
+    width: 100%;
+    height: 565px;
+    padding-bottom: 200px;
+    display: none;
+}
+#content .extand .item{
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+}
+#content .extand .item img{
+    width: 120px;
+    float: left;
+}
+#content .extand .item .right{
+    float: left;
+    width: calc(100% - 120px);
+    padding: 0 20px;
+}
+#content .extand .item h3{
+    display: block;
+    margin: 0;
+    color: #209e85;
+    font-size: 24px;
+    line-height: 40px;
+}
+#content .extand .item p{
+    display: block;
+    font-size: 13px;
+    color: #333;
+}
+#content .extand .item a{
+    color: #209e85;
+    font-size: 13px;
+}
+#content .extand .item a:hover{
+    text-decoration: underline;
+}
+#content .word-book{
+    width: 100%;
+    height: 1900px;
+    padding-bottom: 200px;
+    display: none;
+}
+#content .word-book .left{
+    width: 60%;
+    float: left;
+}
+#content .word-book .left .top-nav{
+
+}
+#content .word-book .left .content{
+
+}
+#content .word-book .right{
+    float: left;
+    width: 40%;
+}
+#content .word-book .right .above{
+    margin-bottom: 20px;
+    padding: 40px 0 10px 20px;
+}
+#content .word-book .right .above h3{
+    margin: 0;
+    line-height: 60px;
+    font-size: 24px;
+    color: #333;
+}
+#content .word-book .right .above .split{
+    width: 100%;
+    border-bottom: 3px solid #ddd;
+}
+#content .word-book .right .above .search-box{
+    padding: 20px 0;
+}
+#content .word-book .right .above .search-box .dropdown-box{
+    float: left;
+    margin-right: 10px;
+}
+#content .word-book .right .above .search-box .dropdown-box .dropdown{
+}
+#content .word-book .right .above .search-box .search{
+    float: left;
+    width: calc(100% - 112px);
+    min-width: 200px;
+}
+#content .word-book .right .below{
+    padding: 0 0 0 20px;
+}
+#content .word-book .right .below h3{
+    margin: 0;
+    line-height: 60px;
+    font-size: 24px;
+    color: #333;
+}
+#content .word-book .right .below .split{
+    width: 100%;
+    border-bottom: 3px solid #ddd;
+}
+#content .word-book .right .below ul{
+    margin-top: 20px;
+
+}
+#content .word-book .right .below ul li{
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    border-left: 4px solid transparent;
+}
+#content .word-book .right .below ul li a{
+    font-size: 16px;
+    color: #555;
+    line-height: 60px;
+    border: none;
+    padding: 0 10px;
+    font-weight: bold;
+}
+#content .word-book .right .below ul li:hover{
+    border-left: 4px solid #209e85;
+    background-color: #eee;
+}
+#content .word-book .right .below ul li:hover a{
+    color: #209e85;
+}
+#content .myWords{
+    width: 100%;
+    padding-bottom: 100px;
+    display: none;
+}
+#content .myWords .left{
+    width: 66%;
+    float: left;
+}
+#content .myWords .left .top-nav{
+    width: 100%;
+}
+#content .myWords .left .top-nav ul{
+    width: 100%;
+    height: 44px;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    padding: 2px 0 0 0;
+}
+#content .myWords .left .top-nav ul li{
+    float: left;
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 4px solid transparent;
+    box-sizing: border-box;
+}
+#content .myWords .left .top-nav ul li a{
+    color: #209e85;
+    text-decoration: none;
+    font-size: 16px;
+}
+#content .myWords .left .top-nav ul li:hover{
+    background: #f4f4f4;
+    border-bottom: 4px solid #209e85;
+}
+#content .myWords .left .top-nav ul li:hover a{
+    color: #555555;
+}
+#content .myWords .left .content{
+
+}
+#content .myWords .right{
+    float: left;
+    width: 34%;
+    padding: 20px 80px;
+}
+#content .myWords .right .btn-box{
+    width: 100%;
+}
+#content .myWords .right .btn-box a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#content .myWords .right .btn-box a:nth-child(1){
+    background: #63a3ce;
+}
+#content .myWords .right .btn-box a:nth-child(2){
+    background: #e2bb81;
+}
+#content .myWords .right .btn-box a:nth-child(3){
+    background: #6dccc2;
+}
+#content .myWords .right .btn-box a img{
+    display: block;
+    width: 24px;
+    height: 22px;
+    margin-left: 10px;
+    float: left;
+    margin-top: 9px;
+}
+#content .myWords .right .btn-box a span{
+    float: left;
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+    margin-left: 12px;
+}
+#content .word-test{
+    width: 100%;
+    padding-bottom: 100px;
+    display: none;
+}
+#content .word-test .left{
+    width: 50%;
+    float: left;
+}
+#content .word-test .left img{
+    width: 100%;
+    margin-top: 50px;
+}
+#content .word-test .right{
+    width: 50%;
+    float: left;
+    padding: 0 70px;
+}
+#content .word-test .right h3{
+    color: #333;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 120px;
+}
+#content .word-test .right span{
+    font-size: 16px;
+    color: #333;
+    display: block;
+    line-height: 32px;
+}
+#content .word-test .right button{
+    display: block;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #209e85;
+    border: none;
+    border-radius: 2px;
+    margin-top: 70px;
+    font-weight: bold;
+}
+#content .word-setting{
+    display: none;
+    width: 100%;
+    padding-bottom: 160px;
+}
+#content .word-setting .left{
+    width: 70%;
+    float: left;
+}
+#content .word-setting .left .alert-box{
+    color: #c09853;
+    font-size: 13px;
+}
+#content .word-setting .left .alert-box div{
+    padding: 10px;
+}
+#content .word-setting .left .alert-box div a{
+    padding: 0 6px;
+    color: #08c;
+}
+#content .word-setting .left h3{
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: normal;
+}
+#content .word-setting .left .split{
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+#content .word-setting .left .content{
+    width: 100%;
+}
+#content .word-setting .left .content .tr-box{
+    padding: 10px 0;
+}
+#content .word-setting .left .content .tr-box label{
+    width: 150px;
+    font-size: 14px;
+    font-weight: normal;
+    float: left;
+}
+#content .word-setting .left .content .tr-box:nth-child(1) input[type='text']{
+    background: none;
+    border: none;
+}
+#content .word-setting .left .content .tr-box input[type='text']{
+    width: 220px;
+    float: left;
+}
+#content .word-setting .left .content .tr-box select{
+    width: 220px;
+    float: left;
+}
+#content .word-setting .left .content .tr-box a{
+    display: block;
+    float: left;
+    padding:0 10px;
+    line-height: 36px;
+    width:calc(100% - 370px);
+    color: #005580;
+    font-size: 13px;
+}
+#content .word-setting .left .content .tr-box:nth-child(9) a{
+    visibility: hidden;
+}
+#content .word-setting .left .content .tr-box a:hover{
+    text-decoration: underline;
+}
+#content .word-setting .left .content .tr-box span{
+    display: block;
+    float:left;
+    margin-left: 150px;
+    font-size: 13px;
+    color: #333;
+    line-height: 30px;
+}
+#content .word-setting .left .content .btn-box{
+    width: 100%;
+}
+#content .word-setting .left .content .btn-box button{
+    background-color: #38c2a8;
+}
+#content .word-setting .left .content .btn-box button:hover{
+    background-color: #17a086;
+}
+#content .word-setting .left .content .btn-box a{
+    font-size: 13px;
+    padding: 0 10px;
+}
+#content .word-setting .left .content .btn-box a:hover{
+    text-decoration: underline;
+}
+#content .word-setting .right{
+    width: 30%;
+    float: left;
+    padding-left: 20px;
+}
+#content .word-setting .right ul{
+    width: 100%;
+}
+#content .word-setting .right ul li{
+    display: block;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    border-left: 4px solid transparent;
+}
+#content .word-setting .right ul li a{
+    color: #209e85;
+    padding-left: 10px;
+    font-size: 16px;
+}
+#content .word-setting .right ul li:hover{
+    background-color: #f9f9f9;
+    border-left: 4px solid #209e85;
+}
+#content .words-learning-start{
+    width: 100%;
+    display: none;
+}
+#content .words-learning-start .title{
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+#content .words-learning-start .title span{
+    float: left;
+    line-height: 30px;
+    color: #999;
+    font-size: 20px;
+    padding: 0 10px;
+}
+#content .words-learning-start .title .split-left{
+    margin-left: calc(50% - 186px);
+}
+#content .words-learning-start .title .split-right{
+}
+#content .words-learning-start .title h3{
+    line-height: 30px;
+    float: left;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #209E85;
+}
+#content .words-learning-start .content{
+    width: 100%;
+    padding: 40px 60px;
+    background: #eee;
+    border-radius: 6px;
+}
+#content .words-learning-start .content .today-words{
+    float: left;
+    text-align: center;
+    margin-left: 60px;
+}
+#content .words-learning-start .content .new-words{
+    float: left;
+    text-align: center;
+    margin-left: 60px;
+}
+#content .words-learning-start .content h3{
+    color: #209E85;
+    font-size: 64px;
+    text-align: center;
+    margin: 0;
+    font-weight:bold;
+}
+#content .words-learning-start .content span{
+    color: #222;
+    font-size: 20px;
+    text-align: center;
+}
+#content .words-learning-start .content button{
+    padding: 15px;
+    background: #38c2a8;
+    color: #fff;
+    font-size: 25px;
+    float: left;
+    border: none;
+    width: 220px;
+    height: 50px;
+    line-height: 20px;
+    margin-left: 220px;
+    margin-top: 20px;
+}
+#content .words-learning-start .bottom{
+    width: 100%;
+    padding-top: 60px;
+}
+#content .words-learning-start .bottom .quotes-en{
+    color: #209e85;
+    font-size: 18px;
+    margin: 0;
+}
+#content .words-learning-start .bottom .quotes-ch{
+    color: #209e85;
+    font-size: 18px;
+    margin: 0;
+}
+#content .words-learning-start .bottom small{
+
+}
+#content .words-learning-content{
+    width: 100%;
+    display: none;
+}
+#content .words-learning-content h3{
+    line-height: 40px;
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+}
+#content .words-learning-content .detail{
+    width: 100%;
+    text-align: center;
+}
+#content .words-learning-content .detail strong{
+    font-size: 18px;
+    color: #999;
+    font-weight: normal;
+    padding: 0 10px;
+}
+#content .words-learning-content .detail span{
+    font-size: 13px;
+    line-height: 30px;
+}
+#content .words-learning-content .detail span span{
+    color: #209e85;
+    font-size: 30px;
+    vertical-align: top;
+    padding:  0 10px;
+}
+#content .words-learning-content .choices{
+    width: 100%;
+    padding:  20px 100px;
+    height: 360px;
+}
+#content .words-learning-content .choices div{
+    color: #000;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    line-height: 60px;
+    height: 60px;
+}
+#content .words-learning-content .choices div.right{
+    border-radius: 3px 3px 0 0;
+}
+#content .words-learning-content .choices div.wrong{
+    border-radius: 0 0 3px 3px;
+}
+#content .words-learning-content .choices div span{
+    display: block;
+    width: 35px;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    float: left;
+    text-align: center;
+    background: url("../img/slash.png") repeat;
+}
+#content .words-learning-content .choices div a{
+    display: block;
+    float: left;
+    padding-left: 20px;
+    color: #000;
+}
+#content .words-learning-content .bottom{
+    width: 100%;
+}
+#content .words-learning-content .bottom .plan{
+    padding: 0 30px;
+    height: 20px;
+}
+#content .words-learning-content .bottom .plan strong{
+    font-size: 12px;
+    color: #333;
+    float: left;
+    line-height: 20px;
+    padding: 0 10px;
+}
+#content .words-learning-content .bottom .plan div{
+    width: calc(100% - 44px);
+    text-align: center;
+    background: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    float: left;
+    height: 20px;
+    color: #444;
+    font-size: 12px;
+}
+#content .words-learning-content .choices div.right:hover{
+    background: #209e85;
+    color: #fff;
+}
+#content .words-learning-content .choices div.right:hover span{
+    background: none;
+}
+#content .words-learning-content .choices div.right:hover a{
+    color: #fff;
+}
+#content .words-learning-content .choices div.wrong:hover{
+    background: #F4434B;
+    color: #fff;
+}
+#content .words-learning-content .choices div.wrong:hover span{
+    background: none;
+}
+#content .words-learning-content .choices div.wrong:hover a{
+    color: #fff;
+}
+
+
+
+
+

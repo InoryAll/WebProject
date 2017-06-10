@@ -1,0 +1,74 @@
+/*nav.css*/
+
+/*公共样式*/
+li{
+    list-style: none;
+}
+
+/*nav.css*/
+#header{
+    background: #209e85;
+    min-height: 54px;
+    padding: 9px 0;
+    height: auto;
+}
+#header img{
+    float: left;
+    display: block;
+    width: 100px;
+}
+#header ul{
+    float: left;
+    width:auto;
+    height: auto;
+    margin-bottom: 0;
+    padding:0;
+    margin-left: 20px;
+}
+#header ul li{
+    position: relative;
+    float: left;
+    padding:0;
+    width: 50px;
+    margin-left: 20px;
+    line-height: 36px;
+    text-align: center;
+}
+#header ul li a{
+    font-size: 16px;
+    color: #fff;
+}
+#header ul li a:hover{
+    text-decoration: none;
+}
+#header .top-right{
+    float: right;
+}
+#header .top-right a:hover{
+    text-decoration: none;
+}
+#header .help,#header .login,#header .regedit,#header .split-dot{
+    float: left;
+    display: block;
+    padding: 0 4px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+#header .help{
+    padding: 0 20px;
+}
+#header ul li.active::after{
+    display: block;
+    position: absolute;
+    content: "";
+    left: 18px;
+    bottom: -9px;
+    width: 0;
+    height: 0;
+    border: 6px solid;
+    border-color: transparent transparent #eee;
+}
+
+

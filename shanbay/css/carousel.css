@@ -1,0 +1,40 @@
+/*carousel.css*/
+
+#content .carousel-box .carousel{
+    width: 100%;
+    height: 100%;
+}
+#content .carousel-box .carousel .item img{
+    width: auto;
+    height: 280px;
+    margin: 100px auto 0;
+}
+#content .carousel-box .carousel .item h4{
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    text-align: center;
+}
+#content .carousel-box .carousel .item p{
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    padding: 10px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 5px;
+    height: 5px;
+    margin: 5px 7px;
+    background: #d6d6d6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    -webkit-transition: opacity 200ms ease;
+    -moz-transition: opacity 200ms ease;
+    -ms-transition: opacity 200ms ease;
+    -o-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
